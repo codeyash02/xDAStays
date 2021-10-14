@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Navbar.css'
+import '../../styles/components/Navbar.css'
 import {Pages} from './Pages'
 function navbar() {
   return (
@@ -11,7 +11,7 @@ function navbar() {
 <div className='nav_content'>
   {
     Pages?.map((item)=>(
-<span>{item?.path}</span>
+<span >{item?.path}</span>
     ))
   }
 
