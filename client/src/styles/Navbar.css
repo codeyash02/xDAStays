@@ -1,0 +1,23 @@
+.Navbar{
+  height: 90px;
+  background-color: #02223c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: white;
+}
+.navbar_main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-left: 40px;
+  
+}
+.nav_logo{
+  flex: 1;
+}
+.nav_content{
+  display: flex;
+  flex: 3;
+  justify-content: space-around;
+}
