@@ -4,23 +4,43 @@
 }
 .carousel_content{
     border: 1px solid rgba(187, 137, 81, 0.726);
-    height: 500px;
+    height: 680px;
     width: 100vw;
 
 }
 .carousel_content img{
+    height: 820px;
     object-fit: cover;
     transition: opacity 0.75s ease-in-out;
     position: absolute;
-    height: auto;
+    /* height: auto; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    /* z-index: 1; */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    
 
  
+}
+.text_div{
+    color: #ffffff;
+    margin-left: 1%;
+    position: absolute;
+    top: 28%;
+    left: 51%;
+    transform: translate(-50%, 30%);
+    
+    font-family: 'Dancing Script', cursive;
+    -webkit-text-stroke: #250b07;
+}
+.div_headlight{
+    
+    -webkit-text-stroke: #250b07;
+    font-size: 80px;
+    font-weight: bolder;
+    text-shadow: 2px 5px 10px #250b07;
 }

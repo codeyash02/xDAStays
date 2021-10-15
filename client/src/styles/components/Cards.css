@@ -22,4 +22,5 @@ object-fit: cover;
 }
 .card_content{
   padding: 16px;
+  font-family: 'Indie Flower', cursive;
 }

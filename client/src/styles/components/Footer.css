@@ -1,0 +1,18 @@
+.footer{
+   
+    background-color: skyblue;
+    border: 1px solid gray;
+    height: 230px;
+}
+.footer_container{
+   margin: 16px 0 0 22px;
+}
+.footer_container h4{
+    padding-left: 15px;
+    font-weight: 600;
+}
+.content_left{
+    display: flex;
+    width: 600px;
+
+}
