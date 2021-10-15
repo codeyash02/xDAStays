@@ -3,13 +3,16 @@
     position: relative;
 }
 .carousel_content{
-    border: 1px solid rgba(160, 94, 19, 0.39);
-    height: 750px;
+    border: 1px solid rgba(187, 137, 81, 0.726);
+    height: 500px;
+    width: 100vw;
+
 }
 .carousel_content img{
-   
+    object-fit: cover;
     transition: opacity 0.75s ease-in-out;
     position: absolute;
+    height: auto;
     top: 0;
     right: 0;
     bottom: 0;
@@ -18,4 +21,6 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+ 
 }

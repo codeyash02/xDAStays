@@ -10,10 +10,10 @@ function Carousl() {
         <div className='carousel'>
             <Carousel>
                 <div className='carousel_content'>
-                  <div className='img'></div>
+                <img src={one} alt="" />
                 </div>
                 <div className='carousel_content'>
-                    <img src={two} alt="" />
+                <img src={two} alt="" />
                 </div>
                 <div className='carousel_content'>
                     <img src={three} alt="" />
