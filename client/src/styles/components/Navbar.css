@@ -1,10 +1,13 @@
 .Navbar{
   width: 100vw;
-  height: 70px;
+  height: 90px;
   background-color: #02223c;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   color: white;
   font-family: 'Caveat', cursive;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .navbar_main{
   display: flex;
