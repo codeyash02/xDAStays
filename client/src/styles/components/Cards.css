@@ -6,8 +6,8 @@
   height: 250px;
 }
 .card_img{
-
-  
+height: 230px;
+margin: 8px 0;
   display: flex;
   flex-direction: row;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -18,7 +18,6 @@
 width: 200px;
 height: 230px;
 object-fit: cover;
-
 }
 .card_content{
   padding: 16px;
