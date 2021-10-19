@@ -1,0 +1,36 @@
+.body_bottom{
+  margin: 12px;
+}
+.bottom_heading {
+  margin-left: 12px;
+  
+}
+.bottom_heading h3,
+.review_section h3{
+  padding: 0 12px;
+font-family: 'Bebas Neue', cursive;
+font-size: 38px;
+font-weight: 600;
+}
+.bottom_content{
+  display: flex
+  ;
+  flex-direction: column;
+  width: 100%;
+}
+.bottom_content_row{
+  display: flex;
+  flex-direction: row;
+
+}
+.review_section{
+margin: 12px;
+
+}
+
+.reviews{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

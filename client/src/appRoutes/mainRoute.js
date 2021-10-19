@@ -1,18 +1,24 @@
 
-// import Layout from "../components/layout/layout";
-// import Home from "../pages/landingpage"
-// import Next from '../pages/NextPage'
-// export const homeRoute = [
+import Layout from "../components/layout/index";
+import Home from "../pages/LandingPage"
+import Booking from '../pages/BookingPage'
+export const homeRoute = [
 
-//     {
-//         path : '/' , 
-//         exact : true , 
-//         layout : Layout , 
-//         component: Home,
-//     },
+    {
+        path : '/' , 
+        exact : true , 
+        layout : Layout , 
+        component: Home,
+    },
+    {
+      path : '/booking' , 
+      exact : true , 
+      layout : Layout , 
+      component: Booking,
+  },
     
-// ]
+]
 
 
 
-// export const mainRoute = [ ...homeRoute ]
+export const mainRoute = [ ...homeRoute ]

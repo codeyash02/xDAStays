@@ -1,9 +1,27 @@
 import React from 'react'
-import LandingPage from './pages/LandingPage';
+import { Route } from "react-router-dom";
+
+import { mainRoute } from './appRoutes/mainRoute';
 function App() {
   return (
     <div className="App">
-      <LandingPage/>
+{mainRoute.map((route, index) => {
+        return (
+          <Route
+            key={index}
+            path={route.path}
+            exact={route.exact}
+            render={(props) => {
+              return (
+                <route.layout>
+                  <route.component {...props} />
+                </route.layout>
+              );
+            }}
+          />
+        );
+      })}
+      
     </div>
   );
 }
