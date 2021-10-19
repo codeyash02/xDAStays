@@ -1,12 +1,12 @@
 export const Pages=[
-  {
-    path:"Booking"
+  {label:"Booking",
+    path:'/booking'
   },
-  {
-    path:"More Adventure"
+  {label:"More Adventure",
+    path:"/moreAdventure"
   },
-  {
-    path:"About Us"
+  {label:"About Us",
+    path:"/AboutUs"
   },
 
  ]

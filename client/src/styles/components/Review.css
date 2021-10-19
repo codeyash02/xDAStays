@@ -1,17 +1,19 @@
-.container{
+.Container{
   display: flex;
-
+flex-direction: row;
+justify-content: space-between;
   width: 100%;
 }
 .review_card{
   margin: 12px;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
   min-height: 250px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: rgba(245, 245, 220, 0.384);
   border-radius: 10px;
+  justify-content: space-between;
 }
 .card_top{
   /* padding-top: 12px; */
@@ -28,6 +30,8 @@
   padding: 0 5px;
   color: gray;
   padding: 10px 15px;
+  font-family: 'Caveat', cursive;
+
 
 }
 .card_bottom{

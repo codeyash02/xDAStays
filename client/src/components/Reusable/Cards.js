@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../styles/components/Cards.css'
 
-function Cards({img,heading,content}) {
+function Cards({img,heading,content,color}) {
+  
   return (
     <div className='card'>
       <div className='card_img'>
