@@ -1,9 +1,10 @@
 .card{
   display: flex;
-  width: 50%;
+  width: 100%;
   flex-direction: row;
   margin: 10px;
   height: 250px;
+  font-family: 'Indie Flower', cursive;
 }
 .card_img{
 height: 230px;
@@ -21,5 +22,24 @@ object-fit: cover;
 }
 .card_content{
   padding: 16px;
-  font-family: 'Indie Flower', cursive;
+
+}
+.Card_Bottom{
+  
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+
+}
+.Card_Bottom button{
+  width: 200px;
+  background-color: #02223c;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  height: 35px;
+}
+.Card_Bottom button:hover{
+  background-color: white;
+  color: #02223c;
 }

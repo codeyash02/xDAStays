@@ -1,29 +1,59 @@
-
-.booking_body{
+.booking_body {
+  font-family: "Pacifico", cursive;
   margin: 90px 0 0 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 350px;
   background-image: url(https://s3.ap-south-1.amazonaws.com/zo-static/website/img/booknow_bg.png);
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.booking_heading{
-  color: white;
-  font-family: 'Pacifico', cursive;
-
+.booking_heading {
+  color: #02223c;
 }
-.booking_content{
-  width: 300px;
+.booking_content {
+  min-width: 500px;
   display: flex;
-margin: 10px;
+  margin: 10px;
   flex-direction: column;
   background-color: #1a2d3b56;
   align-items: center;
 }
-.form_input{
-  margin: 10px 10px;
-
+.form_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.form_input {
+  margin: 10px 10px;
+}
+.MuiInputBase-root {
+  color: white !important;
+  font-family: "Pacifico", cursive !important;
+}
+.form_input select {
+  min-width: 350px;
+  height: 38px;
+  outline: none;
+  background-color: #1a2d3b56;
+  padding: 5px;
+  color: white;
+}
+.form_input select option {
+  background-color: #1a2d3b56;
+}
+.form_button{
+  padding: 0 15px;
+}
+.form_button button{
+width:150px ;
+height: 35px;
+background-color: #02223c;
+color:white;
+padding: 5px;
+font-weight: 600;
+}

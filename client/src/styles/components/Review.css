@@ -14,6 +14,7 @@ justify-content: space-between;
   background-color: rgba(245, 245, 220, 0.384);
   border-radius: 10px;
   justify-content: space-between;
+  border-bottom: 1px solid #02223c;
 }
 .card_top{
   /* padding-top: 12px; */
@@ -38,6 +39,7 @@ justify-content: space-between;
   display: flex;
   justify-content: flex-end;
   padding: 0 10px 0 0;
-  color: rgb(102, 167, 167);
+  color: #02223c;
   font-family: cursive;
+  font-weight: 500;
 }

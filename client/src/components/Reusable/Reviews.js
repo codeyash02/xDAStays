@@ -4,15 +4,8 @@ import "../../styles/components/Review.css";
 import ReactStars from "react-rating-stars-component";
 
 function Reviews({ reviewList }) {
-  const colorArray = [
-    "#ff0000",
-    "#00ff00",
-    "#0000ff",
-    "#ff3333",
-    "#ffff00",
-    "#ff6600",
-  ];
-  var random_color = colorArray[Math.floor(Math.random() * colorArray.length)];
+
+
   return (
     <div className="Container">
       {reviewList.map((d) => (
@@ -23,7 +16,7 @@ function Reviews({ reviewList }) {
               name={d.name}
               size="50"
               className="avatar"
-              color={random_color}
+              color='#02223c'
             />
             <ReactStars
               // count={5}
