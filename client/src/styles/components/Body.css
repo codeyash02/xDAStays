@@ -17,14 +17,14 @@ font-size: 38px;
 font-weight: 600;
 }
 .bottom_content{
-  display: flex
-  ;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
 }
 .bottom_content_row{
   display: flex;
   flex-direction: row;
+  width: 100%;
 
 }
 .review_section{

@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
     },
     Booking: [
       {
-        type: mongoose.Schema.Types.ObjectId(),
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Booking",
       },
     ],

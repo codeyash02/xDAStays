@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/components/Cards.css'
 
-function Cards({img,heading,content,color}) {
+function Cards({img,heading,content,}) {
   
   return (
     <div className='card'>
@@ -9,8 +9,11 @@ function Cards({img,heading,content,color}) {
 <img src={img} alt=''/>
       </div>
       <div className='card_content'>
-        <p style={{fontWeight:'600'}}>{heading}</p>
-        <p style={{color:'gray'}}>{content}</p>
+        <p style={{fontWeight:'600'}}>Introducing  {heading}</p>
+        <p style={{color:'gray'}}>{content}...</p>
+      </div>
+      <div className='Card_Bottom'>
+        <button>Explore More</button>
       </div>
     </div>
   )

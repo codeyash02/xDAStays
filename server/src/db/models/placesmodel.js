@@ -1,20 +1,18 @@
-import monggoose from 'mongoose'
+import mongoose from "mongoose";
 
-const placeSchema =new monggoose.Schema({
-
-  Name:{
-    type:String
+const placeSchema = new mongoose.Schema({
+  Name: {
+    type: String,
   },
-  Title:{
-    type:String
+  Title: {
+    type: String,
   },
-  Photos:[
+  Photos: [
     {
-      type:String
-    }
+      img: String
+    },
   ],
-  
-})
-const Places = mongoose.model("Places",placeSchema)
+});
+const Places = mongoose.model("Place", placeSchema);
 
-export default Places
+export default Places;

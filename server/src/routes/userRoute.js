@@ -1,9 +1,11 @@
 import express from "express";
-import {request} from "../controllers/userController";
+import request from "../controllers/userController";
 
 const userRoute = express.Router();
 
-userRoute.get('/getuser', request.GetAllUser)
-userRoute.post('/adduser',request.AddUser)
+userRoute.get('/getuser', request.getUser)
+userRoute.get('/getuser/:id',request.bookingByUser)
+userRoute.post('/adduser',request.addUser)
 
-export default useRouter;
+export default userRoute;
+

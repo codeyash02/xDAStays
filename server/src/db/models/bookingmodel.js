@@ -2,20 +2,21 @@ import mongoose from "mongoose";
 
 const bookingSchema = new mongoose.Schema(
   {
+    Place:{
+      type:String
+    },
     StartingDate: {
       type: Date,
-      required: TextTrackCue,
+
     },
     EndingDate: {
       type: Date,
-      required: TextTrackCue,
+
     },
-    User: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
-      },
-    ],
+    User: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   { timestamps: true }
 );
