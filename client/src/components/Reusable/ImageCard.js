@@ -3,12 +3,12 @@ import '../../styles/components/ImageCard.css'
 
 function ImageCard({label,Image}) {
   return (
-    <div className='img_card'>
-      <div className='card_content' style={{backgroundImage:`${Image}`}}>
-        <h3>{label}</h3>
+    
+      <div className='card_content' style={{backgroundImage:`url(${Image})`}}>
+        <p>{label}</p>
       </div>
       
-    </div>
+   
   )
 }
 

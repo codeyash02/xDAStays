@@ -26,7 +26,7 @@ function Navbar() {
           ))}
 
           <span className="login_span" onClick={() => setLogin(prevData=>!prevData)}>
-            <img src={User} style={{ width: "100%" }} />
+            <img src={User} style={{ width: "100%" }} alt=''/>
           </span>
         </div>
       </div>

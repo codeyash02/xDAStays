@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import Carousel from "../Reusable/Carousel";
 import Card from "../Reusable/Cards";
 import "../../styles/components/Body.css";
-import Four from "../../assets/Image4.jpg";
-import Five from "../../assets/Image5.jpg";
-import Three from "../../assets/Image3.jpg";
-import One from "../../assets/Image.jpg";
 import Review from "../Reusable/Reviews";
 import fetchFunction from "../../fetch/index";
 const reviewData = [
@@ -50,8 +46,7 @@ function Body() {
       .then((data) => setPlacesList(data.data))
       .catch((error) => console.log(error));
   };
-  const content = `We're now in the unique and incredible Lahaul Valley with a traditional homestay. Experience the most of Himachal's offbeat valley with us!`;
-  const content1 = `Experience solitude, luxury, and serenity on your next holiday, with our chic mountain chalet in Burwa village, just 7 km from Manali.`;
+ 
   return (
     <div className="landing_body">
       <div className="carousel">
