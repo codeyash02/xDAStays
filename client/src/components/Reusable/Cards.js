@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../styles/components/Cards.css'
-
+import Button from './Button'
 function Cards({img,heading,content,}) {
   
   return (
@@ -13,7 +13,7 @@ function Cards({img,heading,content,}) {
         <p style={{color:'gray'}}>{content}...</p>
       </div>
       <div className='Card_Bottom'>
-        <button>Explore More</button>
+      <Button label='Explore More' btnType='Primary'/>
       </div>
     </div>
   )
