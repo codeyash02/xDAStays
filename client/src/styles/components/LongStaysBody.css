@@ -1,0 +1,60 @@
+.longStays_body{
+  position: relative;
+  margin: 92px 0;
+  width: 100%;
+  height: auto;
+  font-family: 'Indie Flower', cursive
+  
+}
+.body_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+.container_heading{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #02223c;
+ 
+}
+.container_heading h2{
+  font-weight: 600;
+}
+.container_heading span{
+ color: rgb(167 26 26 / 88%);
+ font-weight: 700;
+}
+.container_heading p{
+  font-size: 21px;
+  font-weight: 600;
+  padding: 18px 0;
+}
+.container_heading img{
+  width: 23px;
+  height: 23px;
+  margin: 0 0 1px 5px;
+}
+.container_img{
+  background: url('https://book.zostel.com/static/media/bg1.a8f3847b.jpg');
+  width: 98%;
+  min-height: 600px;
+  border-radius: 5px;
+margin:0 0 0 13px;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+
+}
+.container_card{
+  margin: 40px 0 0 13px;
+  width: 98%;
+
+}
+.card_heading h3{
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}

@@ -3,6 +3,7 @@ import "../../styles/components/BookingBody.css";
 import DateFnsUtils from "@date-io/date-fns"; // choose your lib
 import { DatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 import fetchFunction from "../../fetch/index";
+import Button from '../Reusable/Button'
 function BookingBody() {
   const [placesList, setPlacesList] = useState([]);
 
@@ -56,7 +57,7 @@ function BookingBody() {
             </div>
           </div>
           <div className="form_button">
-            <button>Book Now</button>
+            <Button label='Book Now' btnType='Primary'/>
           </div>
         </form>
       </div>

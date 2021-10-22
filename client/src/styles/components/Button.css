@@ -1,0 +1,23 @@
+.btn_primary{
+  width: 200px;
+  background-color: #02223c;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  height: 35px;
+  border-radius: 5px;
+}
+.btn_secondary{
+  width: 130px;
+  background-color: #02223c;
+  color: white;
+  font-weight: 600;
+  height: 28px;
+  border-radius: 5px;
+}
+.btn_primary:hover,
+.btn_secondary:hover
+{
+  background-color: white;
+  color: #02223c;
+}

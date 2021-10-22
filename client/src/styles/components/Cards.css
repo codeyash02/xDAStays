@@ -31,15 +31,3 @@ object-fit: cover;
   left: 50%;
 
 }
-.Card_Bottom button{
-  width: 200px;
-  background-color: #02223c;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  height: 35px;
-}
-.Card_Bottom button:hover{
-  background-color: white;
-  color: #02223c;
-}

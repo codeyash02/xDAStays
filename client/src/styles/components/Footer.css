@@ -5,6 +5,9 @@
     height: 210px;
     color: white;
     width: 100vw;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+ 
    
 }
 .footer_heading{
@@ -24,7 +27,7 @@
     font-weight: 600;
 } */
 .content_left{
-    font-family: 'Caveat', cursive;
+   
     display: flex;
     width: 600px;
     flex-direction: row;
@@ -39,14 +42,19 @@
 .content_left_col{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
 
 }
 .content_right{
-    font-family: 'Caveat', cursive;
-    flex: 1.5;
+
+    flex: 1.2;
     text-align: center;
     font-size: 12px;
 
+
+}
+.content_row{
+    margin-left: 38px;
 }
 .footer_heading{
     display: flex;
@@ -55,11 +63,12 @@
     
 }
 .footer_heading_left{
-    font-family: 'Pacifico', cursive;
-    flex: 1.5;
+
+    flex: 2;
+    margin-left: 35px;
 }
 .footer_heading_right{
-    font-family: 'Pacifico', cursive;
+   
 flex: .47;
 }
 .footer_icon{
@@ -69,5 +78,5 @@ flex: .47;
 }
 .footer_bottom{
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+   
 }
