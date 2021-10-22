@@ -8,7 +8,7 @@ function Cards({img,heading,content,}) {
       <div className='card_img'>
 <img src={img} alt=''/>
       </div>
-      <div className='card_content'>
+      <div className='Card_content'>
         <p style={{fontWeight:'600'}}>Introducing  {heading}</p>
         <p style={{color:'gray'}}>{content}...</p>
       </div>
