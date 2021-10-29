@@ -61,7 +61,7 @@ background-repeat: no-repeat;
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  margin: 15px 0;
+  margin: 15px 0 0 65px;
   font-family: 'Indie Flower', cursive;
 
   
