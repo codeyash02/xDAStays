@@ -3,6 +3,7 @@ import "../../styles/components/Navbar.css";
 import { Pages } from "./Pages";
 import { Link, useHistory } from "react-router-dom";
 import User from "../../assets/user.png";
+import Modal from '../Reusable/Modal'
 function Navbar() {
   const [login, setLogin] = useState(false);
   const history = useHistory();
@@ -33,8 +34,8 @@ function Navbar() {
       {login ? (
         <div className="login_dropdown">
           <div className="dropdown_content">
-            <span>Sign Up</span>
-            <span>Log In</span>
+            <span><Modal label='Sign Up'/></span>
+            <span><Modal label='Log In'/></span>
           </div>
         </div>
       ) : null}
