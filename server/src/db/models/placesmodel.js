@@ -12,7 +12,13 @@ const placeSchema = new mongoose.Schema({
       img: String
     },
   ],
+  Review:[
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Reviews",
+    },
+  ]
 });
-const Places = mongoose.model("Place", placeSchema);
+const Places = mongoose.model("Places", placeSchema);
 
 export default Places;

@@ -4,41 +4,14 @@ import Card from "../Reusable/Cards";
 import "../../styles/components/Body.css";
 import Review from "../Reusable/Reviews";
 import fetchFunction from "../../fetch/index";
-const reviewData = [
-  {
-    name: "Yash",
-    rating: 5,
-    content:
-      "Zostel has always been on top of my stay list. Bir Zostel was a very pleasant stay. The staff is super friendly and makes you feel like a part of the family. Great place to meet travelers and collect some amazing stories from them.If you are in Barot, Zostel is the place to be in.",
-    place: "xDA -Barot",
-  },
-  {
-    name: "Rohit",
-    rating: 4.5,
-    content:
-      "Zostel has always been on top of my stay list. Bir Zostel was a very pleasant stay. The staff is super friendly and makes you feel like a part of the family. Great place to meet travelers and collect some amazing stories from them.If you are in Barot, Zostel is the place to be in.",
-    place: "xDA -Bandla",
-  },
-  {
-    name: "Sahil",
-    rating: 5,
-    content:
-      "Zostel has always been on top of my stay list. Bir Zostel was a very pleasant stay. The staff is super friendly and makes you feel like a part of the family. Great place to meet travelers and collect some amazing stories from them.If you are in Barot, Zostel is the place to be in.",
-    place: "xDA -Jibhi",
-  },
-  {
-    name: "Ashish",
-    rating: 5,
-    content:
-      "Zostel has always been on top of my stay list. Bir Zostel was a very pleasant stay. The staff is super friendly and makes you feel like a part of the family. Great place to meet travelers and collect some amazing stories from them.If you are in Barot, Zostel is the place to be in.",
-    place: "xDA -Peo",
-  },
-];
 function Body() {
   const [placesList, setPlacesList] = useState([]);
+  const [reviewList, setReviewList] = useState([]);
 
+  console.log(reviewList);
   useEffect(() => {
     getPlaceList();
+    reviewListData();
   }, []);
 
   const getPlaceList = async () => {
@@ -46,7 +19,11 @@ function Body() {
       .then((data) => setPlacesList(data.data))
       .catch((error) => console.log(error));
   };
- 
+  const reviewListData = async () => {
+    await fetchFunction("get", "reviews/getreviews")
+      .then((data) => setReviewList(data.data))
+      .catch((error) => console.log(error));
+  };
   return (
     <div className="landing_body">
       <div className="carousel">
@@ -71,7 +48,7 @@ function Body() {
           <h3>Guest Reviews</h3>
         </div>
         <div className="reviews">
-          <Review reviewList={reviewData} />
+          <Review reviewList={reviewList} />
         </div>
       </div>
     </div>

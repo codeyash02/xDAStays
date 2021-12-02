@@ -2,18 +2,14 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    FirstName: {
+    Name: {
       type: String,
     },
-    LastName: {
-      type: String,
-    },
+   
     Email: {
       type: String,
     },
-    Gender: {
-      type: String,
-    },
+   
     Number: {
       type: Number,
     },
@@ -23,6 +19,12 @@ const userSchema = new mongoose.Schema(
         ref: "Booking",
       },
     ],
+    Review:[
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Reviews",
+      },
+    ]
   },
   { timestamps: true }
 );

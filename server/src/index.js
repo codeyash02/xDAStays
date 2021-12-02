@@ -4,6 +4,7 @@ import dbConnection from "./db/connection/index";
 import userRoute from './routes/userRoute'
 import bookingRoute from "./routes/bookingRoute";
 import placeroute from "./routes/placeRoute";
+import reviewroute from "./routes/reviewRoute";
 const startServer = async () => {
 
   const app = express();
@@ -12,6 +13,7 @@ const startServer = async () => {
   app.use('/user',userRoute)
   app.use('/booking',bookingRoute)
   app.use('/places',placeroute)
+  app.use('/reviews',reviewroute)
 
   dbConnection().then((data) => {
     console.log(data)

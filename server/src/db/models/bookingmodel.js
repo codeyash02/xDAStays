@@ -2,8 +2,9 @@ import mongoose from "mongoose";
 
 const bookingSchema = new mongoose.Schema(
   {
-    Place:{
-      type:String
+    Place: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Place",
     },
     StartingDate: {
       type: Date,

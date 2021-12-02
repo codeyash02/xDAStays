@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Avatar from "react-avatar";
 import "../../styles/components/Review.css";
 import ReactStars from "react-rating-stars-component";
@@ -8,19 +8,20 @@ function Reviews({ reviewList }) {
 
   return (
     <div className="Container">
-      {reviewList.map((d) => (
-        
+      
+      {reviewList?.map((d) => (
         <div className="review_card">
+          
           <div className="card_top">
             <Avatar
-              name={d.name}
+              name={d?.Publisher?.Name}
               size="50"
               className="avatar"
               color='#02223c'
             />
             <ReactStars
               // count={5}
-              value={d.rating}
+              value={d?.Rating}
               // onChange={ratingChanged}
               size={24}
               activeColor="#ffd700"
@@ -28,11 +29,11 @@ function Reviews({ reviewList }) {
             />
           </div>
           <div className="card_body">
-            <p>{d.content}</p>
+            <p>{d?.Review}</p>
           </div>
           <div className="card_bottom">
             <p>
-              {d.name} ,{d.place}
+              {d?.Publisher?.Name} ,{d?.Place?.Name}
             </p>
           </div>
         </div>

@@ -25,7 +25,7 @@ addUser: async (req, res) => {
     const { id } = req.params;
     const user = await User.findById(id).populate("Booking");
 
-     res.send(user.Booking);
+     res.send(user);
   }
 };
 export default request;

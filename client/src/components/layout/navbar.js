@@ -34,8 +34,8 @@ function Navbar() {
       {login ? (
         <div className="login_dropdown">
           <div className="dropdown_content">
-            <span><Modal label='Sign Up'/></span>
-            <span><Modal label='Log In'/></span>
+            <span  ><Modal label='Sign Up' title='Welcome to xDA'/></span>
+            <span><Modal label='Log In'  title='Welcome to xDA'/></span>
           </div>
         </div>
       ) : null}

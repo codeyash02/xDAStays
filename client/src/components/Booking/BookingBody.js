@@ -3,9 +3,16 @@ import "../../styles/components/BookingBody.css";
 import DateFnsUtils from "@date-io/date-fns"; // choose your lib
 import { DatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 import fetchFunction from "../../fetch/index";
-import Button from '../Reusable/Button'
+import Button from "../Reusable/Button";
+import Modal from "../Reusable/Modal";
+
 function BookingBody() {
   const [placesList, setPlacesList] = useState([]);
+  const [login] = useState(false);
+  const handleSubmit=()=>{
+console.log('hello world')
+  }
+  
 
   useEffect(() => {
     getAllPlaces();
@@ -27,7 +34,7 @@ function BookingBody() {
         <h2>xDA exclusive Stays and Activities</h2>
       </div>
       <div className="booking_content">
-        <form className="form_content">
+        <form className="form_content" onSubmit={handleSubmit}>
           <div className="form_left">
             <div className="form_input">
               <select>
@@ -57,7 +64,11 @@ function BookingBody() {
             </div>
           </div>
           <div className="form_button">
-            <Button label='Book Now' btnType='Primary'/>
+            {!login ? (
+            <Modal label="Book Now" title="Sign In To Complete Your Booking "/>
+            ) : (
+              <Button  label='Book Now' btnType='Primary' />
+            )}
           </div>
         </form>
       </div>
