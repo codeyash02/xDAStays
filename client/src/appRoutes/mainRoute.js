@@ -3,6 +3,7 @@ import Layout from "../components/layout/index";
 import Home from "../pages/LandingPage"
 import Booking from '../pages/BookingPage'
 import LongStays from "../pages/LongStaysPage";
+import Place from '../pages/Place'
 export const homeRoute = [
 
     {
@@ -23,6 +24,14 @@ export const homeRoute = [
     layout:Layout,
     component:LongStays
   }
+  ,{
+   
+      path:'/xdaXplore',
+      exact:true,
+      layout:Layout,
+      component:Place
+    }
+  
     
 ]
 

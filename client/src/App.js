@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from "react-router-dom";
-
+import './index.css'
 import { mainRoute } from './appRoutes/mainRoute';
 function App() {
   return (
